@@ -1,8 +1,16 @@
+
+
 - 基础知识
   - 网络请求知识
     - [cros跨域原理](/基础知识/网络请求知识/cros跨域原理.md)
     - [JWT](/基础知识/网络请求知识/JWT.md)
 - Java篇
+  - 常用集合
+    - [ArrayList与Vector](/Java篇/常用集合/ArrayList与Vector.md)
+    - [LinkedList](/Java篇/常用集合/LinkedList.md)
+    - [HashMap](/Java篇/常用集合/HashMap.md)
+    - [ConcurrentHashMap](/Java篇/常用集合/ConcurrentHashMap.md)
+    - [HashMap与ConcurrentHashMap](/Java篇/常用集合/HashMap与ConcurrentHashMap.md)
   - Java基础知识
     - [java中==和equals和hashCode的区别](/Java篇/Java基础知识/java中==和equals和hashCode的区别.md)✔️
     - [int和Integer的区别](/Java篇/Java基础知识/int和Integer的区别.md)✔️
@@ -34,10 +42,9 @@
     - [对Java反射的理解](/Java篇/Java基础知识/对Java反射的理解.md)
     - [对Java注解的理解](/Java篇/Java基础知识/对Java注解的理解.md)
     - [对依赖注入的理解](/Java篇/Java基础知识/对依赖注入的理解.md)✔️
-    - [举例说明泛型原理](/Java篇/Java基础知识/举例说明泛型原理.md)
+  - [举例说明泛型原理](/Java篇/Java基础知识/举例说明泛型原理.md)
     - [String为什么要设计成不可变的](/Java篇/Java基础知识/String为什么要设计成不可变的.md)
     - [为什么要对Object中的equal和hashCode重写](/Java篇/Java基础知识/为什么要对Object中的equal和hashCode重写.md)
-
   - 多线程
     - [开启线程的3种方式](/Java篇/多线程/开启线程的3种方式.md)✔️
     - [进程、线程、协程之间的区别](/Java篇/多线程/进程、线程、协程之间的区别.md)✨
@@ -111,7 +118,6 @@
 - JavaWeb
   - Servlet与Tomcat
     - [Servlet生命周期](/JavaWeb/Servlet与Tomcat/Servlet生命周期.md)✔️
-
 - 套题
   - 美团
     - [1-了解SOA，微服务吗](/套题/美团/1-了解SOA，微服务吗.md)
