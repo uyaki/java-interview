@@ -11,6 +11,30 @@
     - [HashMap](/Java篇/常用集合/HashMap.md)
     - [ConcurrentHashMap](/Java篇/常用集合/ConcurrentHashMap.md)
     - [HashMap与ConcurrentHashMap](/Java篇/常用集合/HashMap与ConcurrentHashMap.md)
+    
+    - [HashSet](/Java篇/常用集合/HashSet.md)
+    - [LinkedHashMap](/Java篇/常用集合/LinkedHashMap.md)
+  - 多线程
+    - [异步化](/Java篇/多线程/异步化.md)
+    - [并行化](/Java篇/多线程/并行化.md)
+    - [上下文切换、死锁和资源限制](/Java篇/多线程/上下文切换、死锁和资源限制.md)
+    - [进程、线程、协程之间的区别](/Java篇/多线程/进程、线程、协程之间的区别.md)
+    - [开启线程的3种方式](/Java篇/多线程/开启线程的3种方式.md)
+    - [线程之间是如何通信的](/Java篇/多线程/线程之间是如何通信的.md)
+    - [Java多线程的三大核心](/Java篇/多线程/Java多线程的三大核心.md)
+    - [synchronized关键字](/Java篇/多线程/synchronized关键字.md)
+    - [volatile关键字](/Java篇/多线程/volatile关键字.md)
+    - [锁](/Java篇/多线程/锁.md)
+    - [ReentrantLock实现原理](/Java篇/多线程/ReentrantLock实现原理.md)
+    - [什么是ReentrantLock可重入锁](/Java篇/多线程/什么是ReentrantLock可重入锁.md)
+    - [分布式锁](/Java篇/多线程/分布式锁.md)
+    - [基于Redis的分布式锁](/Java篇/多线程/基于Redis的分布式锁.md)
+    - [如何优雅的使用和理解线程池](/Java篇/多线程/如何优雅的使用和理解线程池.md)
+    - [](/Java篇/多线程/.md)
+  - [](/Java篇/多线程/.md)
+    - [](/Java篇/多线程/.md)
+  - 设计
+    - [缓存设计](/Java篇/设计/缓存设计.md)
   - Java基础知识
     - [java中==和equals和hashCode的区别](/Java篇/Java基础知识/java中==和equals和hashCode的区别.md)✔️
     - [int和Integer的区别](/Java篇/Java基础知识/int和Integer的区别.md)✔️
