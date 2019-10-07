@@ -1,5 +1,12 @@
 # Java 多线程三大核心
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
 
+* [原子性](#原子性)
+* [可见性](#可见性)
+* [顺序性](#顺序性)
+
+<!-- /code_chunk_output -->
 ## 原子性
 
 `Java` 的原子性就和数据库事务的原子性差不多，一个操作中要么全部执行成功或者失败。

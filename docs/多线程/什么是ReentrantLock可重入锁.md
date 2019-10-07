@@ -1,5 +1,4 @@
 # 什么是ReentrantLock可重入锁
-返回[README.md](./../../README.md)
 
 ---
 目录
@@ -7,6 +6,8 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
 <!-- code_chunk_output -->
 
+* [什么是可重入](#什么是可重入)
+* [与 synchronized 的异同](#与-synchronized-的异同)
 * [引用](#引用)
 * [返回目录](#返回目录)
 

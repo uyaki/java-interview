@@ -1,5 +1,18 @@
 # 基于Redis的分布式锁
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
 
+* [前言](#前言)
+* [Redis Set](#redis-set)
+	* [加锁](#加锁)
+		* [阻塞锁](#阻塞锁)
+	* [解锁](#解锁)
+* [使用](#使用)
+* [单测](#单测)
+* [总结](#总结)
+* [引用](#引用)
+
+<!-- /code_chunk_output -->
 ## 前言
 
 分布式锁在分布式应用中应用广泛，想要搞懂一个新事物首先得了解它的由来，这样才能更加的理解甚至可以举一反三。
@@ -109,7 +122,7 @@ public void lock(String key, String request) throws InterruptedException {
             break ;
         }
 
- //防止一直消耗 CPU 	
+ //防止一直消耗 CPU
         Thread.sleep(DEFAULT_SLEEP_TIME) ;
     }
 

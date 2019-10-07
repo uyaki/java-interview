@@ -1,5 +1,16 @@
 # synchronized关键字
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
 
+* [锁优化](#锁优化)
+	* [轻量锁](#轻量锁)
+		* [解锁](#解锁)
+	* [偏向锁](#偏向锁)
+		* [释放锁](#释放锁)
+	* [其他优化](#其他优化)
+		* [适应性自旋](#适应性自旋)
+
+<!-- /code_chunk_output -->
 众所周知 `synchronized` 关键字是解决并发问题常用解决方案，有以下三种使用方式:
 
 - 同步普通方法，锁的是当前对象。
