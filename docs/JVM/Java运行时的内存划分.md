@@ -1,5 +1,7 @@
 # Java 运行时的内存划分
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
+
 ![image-20191007193004222](assets/image-20191007193004222.png)
 
 ## 程序计数器
