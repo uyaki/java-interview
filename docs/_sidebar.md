@@ -43,6 +43,9 @@
   - [分布式缓存设计](/分布式/分布式缓存设计.md)
 - 设计
   - [缓存设计](/设计/缓存设计.md)
+- 框架知识
+  - [Spring Bean生命周期.](/框架知识/Spring_Bean生命周期.md)
+  - [Spring boot AOP](/框架知识/Spring_boot_AOP.md)
 - Java基础知识
   - [java中==和equals和hashCode的区别](/Java基础知识/java中==和equals和hashCode的区别.md)✔️
   - [int和Integer的区别](/Java基础知识/int和Integer的区别.md)✔️
