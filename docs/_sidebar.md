@@ -4,7 +4,6 @@
   - 网络请求知识
     - [cros跨域原理](/基础知识/网络请求知识/cros跨域原理.md)
     - [JWT](/基础知识/网络请求知识/JWT.md)
-
 - 常用集合
   - [ArrayList与Vector](/常用集合/ArrayList与Vector.md)
   - [LinkedList](/常用集合/LinkedList.md)
@@ -32,6 +31,16 @@
   - [深入理解线程通信](/多线程/深入理解线程通信.md)
   - [](/多线程/.md)
   - [](/多线程/.md)
+- JVM
+  - [Java运行时的内存划分](/JVM/Java运行时的内存划分.md)
+  - [类加载机制](/JVM/类加载机制.md)
+  - [内存溢出OMM分析](/JVM/内存溢出OOM分析.md)
+  - [垃圾回收](/JVM/垃圾回收.md)
+  - [对象的创建与内存分配](/JVM/对象的创建与内存分配.md)
+  - [](/JVM/.md)
+  - [](/JVM/.md)
+  - [](/JVM/.md)
+  - [](/JVM/.md)
 - 设计
   - [缓存设计](/设计/缓存设计.md)
 - Java基础知识
