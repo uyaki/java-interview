@@ -3,17 +3,20 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
 <!-- code_chunk_output -->
 
+* [思维导图](#思维导图)
 * [前言](#前言)
 * [Redis Set](#redis-set)
 	* [加锁](#加锁)
 		* [阻塞锁](#阻塞锁)
 	* [解锁](#解锁)
-* [使用](#使用)
-* [单测](#单测)
-* [总结](#总结)
 * [引用](#引用)
 
 <!-- /code_chunk_output -->
+
+## 思维导图
+
+![image](assets/基于Redis的分布式锁.png)
+
 ## 前言
 
 分布式锁在分布式应用中应用广泛，想要搞懂一个新事物首先得了解它的由来，这样才能更加的理解甚至可以举一反三。
@@ -196,133 +199,10 @@ public  boolean unlock(String key,String request){
 - 利用超时机制解决了死锁。
 - Redis 支持集群部署提高了可用性。
 
-## 使用
-
-我自己有撸了一个完整的实现，并且已经用于了生产，有兴趣的朋友可以开箱使用:
-
-maven 依赖：
-
-```xml
-<dependency>
-    <groupId>top.crossoverjie.opensource</groupId>
-    <artifactId>distributed-redis-lock</artifactId>
-    <version>1.0.0</version>
-</dependency>
-```
-
-配置 bean :
-
-```java
-@Configuration
-public class RedisLockConfig {
-
-    @Bean
-    public RedisLock build(){
-        RedisLock redisLock = new RedisLock() ;
-        HostAndPort hostAndPort = new HostAndPort("127.0.0.1",7000) ;
-        JedisCluster jedisCluster = new JedisCluster(hostAndPort) ;
-        // Jedis 或 JedisCluster 都可以
-        redisLock.setJedisCluster(jedisCluster) ;
-        return redisLock ;
-    }
-
-}
-```
-
-使用：
-
-```java
-@Autowired
-private RedisLock redisLock ;
-
-public void use() {
-    String key = "key";
-    String request = UUID.randomUUID().toString();
-    try {
-        boolean locktest = redisLock.tryLock(key, request);
-        if (!locktest) {
-            System.out.println("locked error");
-            return;
-        }
-
-
-        //do something
-
-    } finally {
-        redisLock.unlock(key,request) ;
-    }
-
-}
-```
-
-使用很简单。这里主要是想利用 Spring 来帮我们管理 RedisLock 这个单例的 bean，所以在释放锁的时候需要手动(因为整个上下文只有一个 RedisLock 实例)的传入 key 以及 request(api 看起来不是特别优雅)。
-
-也可以在每次使用锁的时候 new 一个 RedisLock 传入 key 以及 request，这样倒是在解锁时很方便。但是需要自行管理 RedisLock 的实例。各有优劣吧。
-
-项目源码在：
-
-https://github.com/crossoverJie/distributed-lock-redis
-
-欢迎讨论。
-
-## 单测
-
-在做这个项目的时候让我不得不想提一下**单测**。
-
-因为这个应用是强依赖于第三方组件的(Redis)，但是在单测中我们需要排除掉这种依赖。比如其他伙伴 fork 了该项目想在本地跑一遍单测，结果运行不起来：
-
-1. 有可能是 Redis 的 ip、端口和单测里的不一致。
-2. Redis 自身可能也有问题。
-3. 也有可能是该同学的环境中并没有 Redis。
-
-所以最好是要把这些外部不稳定的因素排除掉，单测只测我们写好的代码。
-
-于是就可以引入单测利器 `Mock` 了。
-
-它的想法很简答，就是要把你所依赖的外部资源统统屏蔽掉。如：数据库、外部接口、外部文件等等。
-
-使用方式也挺简单，可以参考该项目的单测：
-
-```java
-@Test
-public void tryLock() throws Exception {
-    String key = "test";
-    String request = UUID.randomUUID().toString();
-    Mockito.when(jedisCluster.set(Mockito.anyString(), Mockito.anyString(), Mockito.anyString(),
-            Mockito.anyString(), Mockito.anyLong())).thenReturn("OK");
-
-    boolean locktest = redisLock.tryLock(key, request);
-    System.out.println("locktest=" + locktest);
-
-    Assert.assertTrue(locktest);
-
-    //check
-    Mockito.verify(jedisCluster).set(Mockito.anyString(), Mockito.anyString(), Mockito.anyString(),
-            Mockito.anyString(), Mockito.anyLong());
-}
-```
-
-这里只是简单演示下，可以的话下次仔细分析分析。
-
-它的原理其实也挺简单，debug 的话可以很直接的看出来：
-
-![img](assets/5cd1d7afe72f2.jpg)
-
-这里我们所依赖的 JedisCluster 其实是一个 `cglib 代理对象`。所以也不难想到它是如何工作的。
-
-比如这里我们需要用到 JedisCluster 的 set 函数并需要它的返回值。
-
-Mock 就将该对象代理了，并在实际执行 set 方法后给你返回了一个你自定义的值。
-
-这样我们就可以随心所欲的测试了，**完全把外部依赖所屏蔽了**。
-
-## 总结
-
-至此一个基于 Redis 的分布式锁完成，但是依然有些问题。
-
-- 如在 key 超时之后业务并没有执行完毕但却自动释放锁了，这样就会导致并发问题。
-- 就算 Redis 是集群部署的，如果每个节点都只是 master 没有 slave，那么 master 宕机时该节点上的所有 key 在那一时刻都相当于是释放锁了，这样也会出现并发问题。就算是有 slave 节点，但如果在数据同步到 salve 之前 master 宕机也是会出现上面的问题。
-
 ## 引用
 
-[https://crossoverjie.top/2018/03/29/distributed-lock/distributed-lock-redis/](https://crossoverjie.top/2018/03/29/distributed-lock/distributed-lock-redis/)
+[基于 Redis 的分布式锁](https://crossoverjie.top/2018/03/29/distributed-lock/distributed-lock-redis/)
+
+[Redlock：Redis分布式锁最牛逼的实现](https://mp.weixin.qq.com/s?__biz=MzU5ODUwNzY1Nw==&mid=2247484155&idx=1&sn=0c73f45f2f641ba0bf4399f57170ac9b&scene=21)
+
+[Redisson实现Redis分布式锁的N种姿势](https://www.javazhiyin.com/29459.html)

@@ -26,7 +26,6 @@
   - [ReentrantLock实现原理](/多线程/ReentrantLock实现原理.md)
   - [什么是ReentrantLock可重入锁](/多线程/什么是ReentrantLock可重入锁.md)
   - [分布式锁](/多线程/分布式锁.md)
-  - [基于Redis的分布式锁](/多线程/基于Redis的分布式锁.md)
   - [如何优雅的使用和理解线程池](/多线程/如何优雅的使用和理解线程池.md)
   - [深入理解线程通信](/多线程/深入理解线程通信.md)
   - [](/多线程/.md)
@@ -38,7 +37,7 @@
   - [垃圾回收](/JVM/垃圾回收.md)
   - [对象的创建与内存分配](/JVM/对象的创建与内存分配.md)
   - [volatile关键字](/JVM/volatile关键字.md)
-  - [](/JVM/.md)
+  - [基于Redis的分布式锁](/JVM/基于Redis的分布式锁.md)
   - [](/JVM/.md)
   - [](/JVM/.md)
 - 设计
