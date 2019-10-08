@@ -1,6 +1,18 @@
 # Java 运行时的内存划分
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
+
+* [程序计数器](#程序计数器)
+* [虚拟机栈](#虚拟机栈)
+* [Java 堆](#java-堆)
+* [方法区(JDK1.7)](#方法区jdk17)
+* [元数据区(JDK1.8)](#元数据区jdk18)
+* [运行时常量池](#运行时常量池)
+* [直接内存](#直接内存)
+* [常用参数](#常用参数)
+
+<!-- /code_chunk_output -->
 
 ![image-20191007193004222](assets/image-20191007193004222.png)
 
