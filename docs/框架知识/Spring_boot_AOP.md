@@ -1,5 +1,23 @@
 # Spring boot - AOP
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
+
+* [思维导图](#思维导图)
+* [Spring AOP(Java代理模式)](#spring-aopjava代理模式)
+* [execution 表达式](#execution-表达式)
+* [AOP](#aop)
+
+<!-- /code_chunk_output -->
+
+## 思维导图
+
+![](assets/Spring_boot_AOP.png)
+
+## Spring AOP(Java代理模式)
+
+具体可以看[代理模式](https://gknoone.github.io/java-interview/#/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F)
+
 ## execution 表达式
 
 ```
@@ -19,12 +37,12 @@ execution(modifiers-pattern? ret-type-pattern declaring-type-pattern? name-patte
 示例
 
 ```
-1）execution(* *(..))  
-//表示匹配所有方法  
-2）execution(public * com. savage.service.UserService.*(..))  
-//表示匹配com.savage.server.UserService中所有的公有方法  
-3）execution(* com.savage.server..*.*(..))  
-//表示匹配com.savage.server包及其子包下的所有方法 
+1）execution(* *(..))
+//表示匹配所有方法
+2）execution(public * com. savage.service.UserService.*(..))
+//表示匹配com.savage.server.UserService中所有的公有方法
+3）execution(* com.savage.server..*.*(..))
+//表示匹配com.savage.server包及其子包下的所有方法
 ```
 
 ## AOP
@@ -32,7 +50,7 @@ execution(modifiers-pattern? ret-type-pattern declaring-type-pattern? name-patte
 - @Pointcut
   - 定义切点
     - 注解参数：value值为execution表达式
-  - 注解的函数的方法名，就是该Pointcut的签名
+    - 注解的函数的方法名，就是该Pointcut的签名
 - @Before
   - 实际方法执行之前
     - 注解参数：为Pointcut的签名
@@ -130,11 +148,10 @@ public class AopAspect {
 
 - 正常返回
 
-![one-ok](https://img-blog.csdn.net/20160811192425854)
+![one-ok](assets/20160811192425854.png)
 
 - 抛出异常
 
-![one-exception](https://img-blog.csdn.net/20160811192446479)
+![one-exception](assets/20160811192446479.png)
 
 AOP的AfterThrowing处理虽然可以对目标方法的异常进行处理，但**这种处理与直接使用catch捕捉不同，catch捕捉意味着完全处理该异常，如果catch块中没有重新抛出新的异常，则该方法可能正常结束**；而AfterThrowing处理虽然处理了该异常，但它不能完全处理异常，该异常依然会传播到上一级调用者，即JVM。
-

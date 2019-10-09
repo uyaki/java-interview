@@ -1,5 +1,3 @@
-
-
 - 基础知识
   - 网络请求知识
     - [cros跨域原理](/基础知识/网络请求知识/cros跨域原理.md)
@@ -16,9 +14,10 @@
   - [HashMap](/常用集合/HashMap.md)
   - [ConcurrentHashMap](/常用集合/ConcurrentHashMap.md)
   - [HashMap与ConcurrentHashMap](/常用集合/HashMap与ConcurrentHashMap.md)
-
   - [HashSet](/常用集合/HashSet.md)
   - [LinkedHashMap](/常用集合/LinkedHashMap.md)
+- 设计模式
+  - [代理模式](/设计模式/代理模式.md)
 - 多线程
   - [异步化](/多线程/异步化.md)
   - [并行化](/多线程/并行化.md)
