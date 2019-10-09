@@ -1,5 +1,15 @@
 # volatile关键字
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
+
+* [思维导图](#思维导图)
+* [内存可见性](#内存可见性)
+	* [内存可见性的应用](#内存可见性的应用)
+* [指令重排](#指令重排)
+	* [指令重排的的应用](#指令重排的的应用)
+* [总结](#总结)
+
+<!-- /code_chunk_output -->
 ## 思维导图
 
 ![volatile](assets/volatile.png)
