@@ -8,6 +8,7 @@
     - [TCP/IP协议](/基础知识/TCPIP/TCP、IP协议.md)
     - [TCP/IP知识点](/基础知识/TCPIP/TCP、IP知识点.md)
     - [TCP首部](/基础知识/TCPIP/TCP首部.md)
+  
 - 常用集合
   - [ArrayList与Vector](/常用集合/ArrayList与Vector.md)
   - [LinkedList](/常用集合/LinkedList.md)
@@ -16,8 +17,11 @@
   - [HashMap与ConcurrentHashMap](/常用集合/HashMap与ConcurrentHashMap.md)
   - [HashSet](/常用集合/HashSet.md)
   - [LinkedHashMap](/常用集合/LinkedHashMap.md)
+  
 - 设计模式
+  
   - [代理模式](/设计模式/代理模式.md)
+  
 - 多线程
   - [异步化](/多线程/异步化.md)
   - [并行化](/多线程/并行化.md)
@@ -33,8 +37,9 @@
   - [分布式锁](/多线程/分布式锁.md)
   - [如何优雅的使用和理解线程池](/多线程/如何优雅的使用和理解线程池.md)
   - [深入理解线程通信](/多线程/深入理解线程通信.md)
+  - [AQS](/多线程/AQS.md)
   - [](/多线程/.md)
-  - [](/多线程/.md)
+  
 - JVM
   - [Java运行时的内存划分](/JVM/Java运行时的内存划分.md)
   - [类加载机制](/JVM/类加载机制.md)
@@ -42,6 +47,7 @@
   - [垃圾回收](/JVM/垃圾回收.md)
   - [对象的创建与内存分配](/JVM/对象的创建与内存分配.md)
   - [volatile关键字](/JVM/volatile关键字.md)
+  
 - 分布式
   - [应用限流](/分布式/应用限流.md)
   - [基于Redis的分布式锁](/分布式/基于Redis的分布式锁.md)
@@ -49,13 +55,44 @@
   - [分布式ID生成器](/分布式/分布式ID生成器.md)
   - [CAP、BASE、ACID](/分布式/CAP、BASE、ACID.md)
   - [分布式事务](/分布式/分布式事务.md)
+  
 - 架构设计
+  
   - [缓存设计](/架构设计/缓存设计.md)
+  
 - 框架知识
   - [Spring Bean生命周期.](/框架知识/Spring_Bean生命周期.md)
   - [Spring boot AOP](/框架知识/Spring_boot_AOP.md)
+  
 - DB
+  
   - [B+ Tree](/DB/B+Tree.md)
+  - [Mysql查询优化](/DB/Mysql查询优化.md)
+  - [数据库水平垂直拆分](/DB/数据库水平垂直拆分.md)
+  - [Seata框架](/DB/Seata框架.md)
+  
+- 算法
+
+  - [红包算法](/算法/红包算法.md)
+
+  - [二叉树的层序遍历](/算法/二叉树的层序遍历.md)
+
+  - [快乐数字](/算法/快乐数字.md)
+
+  - [链表是否有环](/算法/链表是否有环.md)
+
+  - [限流算法](/算法/限流算法.md)
+
+  - [从一个数组中返回两个值相加等于目标值的下标](/算法/从一个数组中返回两个值相加等于目标值的下标.md)
+
+  - [一致Hash算法](/算法/一致Hash算法.md)
+
+  - [](/算法/.md)
+
+  - [](/算法/.md)
+
+    
+
 - Java基础知识
   - [java中==和equals和hashCode的区别](/Java基础知识/java中==和equals和hashCode的区别.md)✔️
   - [int和Integer的区别](/Java基础知识/int和Integer的区别.md)✔️
@@ -87,9 +124,11 @@
   - [对Java反射的理解](/Java基础知识/对Java反射的理解.md)
   - [对Java注解的理解](/Java基础知识/对Java注解的理解.md)
   - [对依赖注入的理解](/Java基础知识/对依赖注入的理解.md)✔️
+  
 - [举例说明泛型原理](/Java基础知识/举例说明泛型原理.md)
   - [String为什么要设计成不可变的](/Java基础知识/String为什么要设计成不可变的.md)
   - [为什么要对Object中的equal和hashCode重写](/Java基础知识/为什么要对Object中的equal和hashCode重写.md)
+  
 - 多线程
   - [开启线程的3种方式](/多线程/开启线程的3种方式.md)✔️
   - [进程、线程、协程之间的区别](/多线程/进程、线程、协程之间的区别.md)✨
@@ -144,10 +183,15 @@
   - [SimpleDateFormat是线程安全的吗](/多线程/SimpleDateFormat是线程安全的吗.md)
   - [同步集合和并发集合有什么区别](/多线程/同步集合和并发集合有什么区别.md)
   - [Timer类，如何创建一个有特定时间间隔的任务](/多线程/Timer类，如何创建一个有特定时间间隔的任务.md)
+  
 - JVM
+
 - 计算机网络
+
 - 数据结构与算法
+
 - 数据库
+
 - Spring
   - Spring概述
     - [使用Spring框架的好处](/Spring/Spring概述/使用Spring框架的好处.md)
@@ -159,9 +203,11 @@
     - [IOC的优点是什么](/Spring/Spring概述/IOC的优点是什么.md)
     - [ApplicationContext通常的实现是什么](/Spring/Spring概述/ApplicationContext通常的实现是什么.md)
     - [Bean工厂和ApplicationContexts的区别](/Spring/Spring概述/Bean工厂和ApplicationContexts的区别.md)
+  
 - JavaWeb
   - Servlet与Tomcat
     - [Servlet生命周期](/JavaWeb/Servlet与Tomcat/Servlet生命周期.md)✔️
+  
 - 套题
   - 美团
     - [1-了解SOA，微服务吗](/套题/美团/1-了解SOA，微服务吗.md)
