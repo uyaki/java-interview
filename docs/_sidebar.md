@@ -46,11 +46,16 @@
   - [应用限流](/分布式/应用限流.md)
   - [基于Redis的分布式锁](/分布式/基于Redis的分布式锁.md)
   - [分布式缓存设计](/分布式/分布式缓存设计.md)
-- 设计
-  - [缓存设计](/设计/缓存设计.md)
+  - [分布式ID生成器](/分布式/分布式ID生成器.md)
+  - [CAP、BASE、ACID](/分布式/CAP、BASE、ACID.md)
+  - [分布式事务](/分布式/分布式事务.md)
+- 架构设计
+  - [缓存设计](/架构设计/缓存设计.md)
 - 框架知识
   - [Spring Bean生命周期.](/框架知识/Spring_Bean生命周期.md)
   - [Spring boot AOP](/框架知识/Spring_boot_AOP.md)
+- DB
+  - [B+ Tree](/DB/B+Tree.md)
 - Java基础知识
   - [java中==和equals和hashCode的区别](/Java基础知识/java中==和equals和hashCode的区别.md)✔️
   - [int和Integer的区别](/Java基础知识/int和Integer的区别.md)✔️
