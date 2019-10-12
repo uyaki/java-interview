@@ -1,6 +1,12 @@
 # CROS跨域原理
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
 
-## **CROS跨域流程**
+* [CROS跨域流程](#cros跨域流程)
+* [CROS服务端配置](#cros服务端配置)
+
+<!-- /code_chunk_output -->
+## CROS跨域流程
 
 1、浏览器接收到脚本发起的请求（资源B），
 

@@ -13,10 +13,12 @@
   - [ArrayList与Vector](/常用集合/ArrayList与Vector.md)
   - [LinkedList](/常用集合/LinkedList.md)
   - [HashMap](/常用集合/HashMap.md)
+  - [HashMap源码解析](/常用集合/HashMap源码解析.md)
   - [ConcurrentHashMap](/常用集合/ConcurrentHashMap.md)
   - [HashMap与ConcurrentHashMap](/常用集合/HashMap与ConcurrentHashMap.md)
   - [HashSet](/常用集合/HashSet.md)
   - [LinkedHashMap](/常用集合/LinkedHashMap.md)
+  - [HashMap与HashTable与ConcurrentHashMap的区别](/常用集合/HashMap与HashTable与ConcurrentHashMap的区别.md)
   
 - 设计模式
   
@@ -38,7 +40,8 @@
   - [如何优雅的使用和理解线程池](/多线程/如何优雅的使用和理解线程池.md)
   - [深入理解线程通信](/多线程/深入理解线程通信.md)
   - [AQS](/多线程/AQS.md)
-  - [](/多线程/.md)
+  - [阻塞队列](/多线程/阻塞队列.md)
+  - [Deamon线程](/多线程/Deamon线程.md)
   
 - JVM
   - [Java运行时的内存划分](/JVM/Java运行时的内存划分.md)
@@ -87,11 +90,12 @@
 
   - [一致Hash算法](/算法/一致Hash算法.md)
 
-  - [](/算法/.md)
+  - [缓存算法LRU、LFU、FIFO.md](/算法/缓存算法LRU、LFU、FIFO.md)
 
   - [](/算法/.md)
 
-    
+- 版本控制
+  - [git使用](/版本控制/git使用.md)
 
 - Java基础知识
   - [java中==和equals和hashCode的区别](/Java基础知识/java中==和equals和hashCode的区别.md)✔️

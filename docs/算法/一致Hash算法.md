@@ -1,5 +1,14 @@
 # 一致 Hash 算法
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
 
+* [Hash 取模](#hash-取模)
+* [一致 Hash 算法](#一致-hash-算法-1)
+	* [容错性](#容错性)
+	* [拓展性](#拓展性)
+* [虚拟节点](#虚拟节点)
+
+<!-- /code_chunk_output -->
 ## Hash 取模
 
 将传入的 Key 按照 `index = hash(key) % N` 这样来计算出需要存放的节点。其中 hash 函数是一个将字符串转换为正整数的哈希映射方法，N 就是节点的数量。

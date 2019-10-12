@@ -1,6 +1,19 @@
 # JWT
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
 
+* [跨域认证的问题](#跨域认证的问题)
+* [JWT 的原理](#jwt-的原理)
+* [JWT 的数据结构](#jwt-的数据结构)
+	* [Header](#header)
+	* [Payload](#payload)
+	* [Signature](#signature)
+* [JWT 的使用方式](#jwt-的使用方式)
+* [JWT 的几个特点](#jwt-的几个特点)
+* [参考](#参考)
+
+<!-- /code_chunk_output -->
 
 ## 跨域认证的问题
 

@@ -1,6 +1,16 @@
 # LinkedHashMap
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
 
-众所周知 [HashMap](https://github.com/crossoverJie/Java-Interview/blob/master/MD/HashMap.md) 是一个无序的 `Map`，因为每次根据 `key` 的 `hashcode` 映射到 `Entry` 数组上，所以遍历出来的顺序并不是写入的顺序。
+* [数据结构](#数据结构)
+* [构造方法](#构造方法)
+* [put() 方法](#put-方法)
+* [get 方法](#get-方法)
+* [总结](#总结)
+
+<!-- /code_chunk_output -->
+
+众所周知 [HashMap](https://gknoone.github.io/java-interview/#/%E5%B8%B8%E7%94%A8%E9%9B%86%E5%90%88/HashMap) 是一个无序的 `Map`，因为每次根据 `key` 的 `hashcode` 映射到 `Entry` 数组上，所以遍历出来的顺序并不是写入的顺序。
 
 因此 JDK 推出一个基于 `HashMap` 但具有顺序的 `LinkedHashMap` 来解决有排序需求的场景。
 
@@ -55,7 +65,7 @@ private static class Entry<K,V> extends HashMap.Entry<K,V> {
   Entry(int hash, K key, V value, HashMap.Entry<K,V> next) {
     super(hash, key, value, next);
   }
-}  
+}
 ```
 
 其中 `Entry` 继承于 `HashMap` 的 `Entry`，并新增了上下节点的指针，也就形成了双向链表。
@@ -174,7 +184,7 @@ void createEntry(int hash, K key, V value, int bucketIndex) {
   Entry<K,V> e = table[bucketIndex];
   table[bucketIndex] = new Entry<>(hash, key, value, e);
   size++;
-}       
+}
 ```
 
 主体的实现都是借助于 `HashMap` 来完成的，只是对其中的 `recordAccess(), addEntry(), createEntry()` 进行了重写。
@@ -193,7 +203,7 @@ void recordAccess(HashMap<K,V> m) {
 }
 
 
-//调用了 HashMap 的实现，并判断是否需要删除最少使用的 Entry(默认不删除)    
+//调用了 HashMap 的实现，并判断是否需要删除最少使用的 Entry(默认不删除)
 void addEntry(int hash, K key, V value, int bucketIndex) {
   super.addEntry(hash, key, value, bucketIndex);
 
@@ -219,7 +229,7 @@ private void addBefore(Entry<K,V> existingEntry) {
   before = existingEntry.before;
   before.after = this;
   after.before = this;
-}       
+}
 ```
 
 ## get 方法
@@ -232,7 +242,7 @@ public V get(Object key) {
   if (e == null)
     return null;
 
-  //多了一个判断是否是按照访问顺序排序，是则将当前的 Entry 移动到链表头部。   
+  //多了一个判断是否是按照访问顺序排序，是则将当前的 Entry 移动到链表头部。
   e.recordAccess(this);
   return e.value;
 }

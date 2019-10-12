@@ -1,5 +1,15 @@
 # 分布式ID生成器
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
 
+* [基于数据库](#基于数据库)
+	* [水平扩展改进](#水平扩展改进)
+* [本地 UUID 生成](#本地-uuid-生成)
+* [采用本地时间](#采用本地时间)
+* [Twitter 雪花算法](#twitter-雪花算法)
+	* [原理](#原理)
+
+<!-- /code_chunk_output -->
 一个唯一 ID 在一个分布式系统中是非常重要的一个业务属性，其中包括一些如订单 ID，消息 ID ，会话 ID，他们都有一些共有的特性：
 
 - 全局唯一。
@@ -153,4 +163,3 @@ public class SnowFlake {
  
 }
 ```
-

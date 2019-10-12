@@ -1,6 +1,6 @@
 # Spring Bean生命周期
 
-
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
 
 ## 生命周期图
 

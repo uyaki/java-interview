@@ -1,4 +1,13 @@
 # HashSet
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
+
+* [成员变量](#成员变量)
+* [构造函数](#构造函数)
+* [add](#add)
+* [总结](#总结)
+
+<!-- /code_chunk_output -->
 
 `HashSet` 是一个不允许存储重复元素的集合，它的实现比较简单，只要理解了 `HashMap`，`HashSet` 就水到渠成了。
 
@@ -27,7 +36,7 @@ public HashSet() {
 
 public HashSet(int initialCapacity, float loadFactor) {
 	map = new HashMap<>(initialCapacity, loadFactor);
-}    
+}
 ```
 
 构造函数很简单，利用了 `HashMap` 初始化了 `map` 。

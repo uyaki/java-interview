@@ -1,5 +1,13 @@
 # AQS
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
+<!-- code_chunk_output -->
 
+* [ReentrantLock加锁和释放锁的底层原理](#reentrantlock加锁和释放锁的底层原理)
+	* [加锁](#加锁)
+	* [锁的互斥是如何实现的？](#锁的互斥是如何实现的)
+	* [释放锁](#释放锁)
+
+<!-- /code_chunk_output -->
 **AbstractQueuedSynchronizer，抽象队列同步器**
 
 ReentrantLock、ReentrantReadWriteLock底层都是基于AQS来实现的。
@@ -42,4 +50,3 @@ AQS内部还有一个**等待队列**，专门放那些加锁失败的线程！
 - 将AQS内的**state变量的值递减1**，如果state值为0，则彻底释放锁，会将“加锁线程”变量也设置为null！
 
 - 会从**等待队列的队头唤醒线程2重新尝试加锁**
-
