@@ -14,19 +14,10 @@
 	* [get 方法](#get-方法-1)
 
 <!-- /code_chunk_output -->
-## 太长不看
 
-- 1.7
-  - Segment（继承于ReentrantLock）+HashEntry
-  - get
-    - `Key` 通过 `Hash` 之后定位到具体的 `Segment`
-    - 再通过一次 `Hash` 定位到具体的元素上
-    - `HashEntry` 中的 `value` 属性是用 `volatile` 关键词修饰的，保证了内存可见性
-  - put（虽然 HashEntry 中的 value 是用 `volatile` 关键词修饰的，但是并不能保证并发的原子性，所以 put 操作时仍然需要加锁处理。）
-    - 通过 Key 的 Hash 定位到具体的 Segment
-    - 扩容校验（**HashMap 是插入元素之后再看是否需要扩容，有可能扩容之后后续就没有插入就浪费了本次扩容(扩容非常消耗性能)。**）
-- 1.8
-  - 采用 `CAS + synchronized` 来保证并发安全性
+## 思维导图
+
+![](assets/ConcurrentHashMap.png)
 
 ## 实现原理
 

@@ -1,4 +1,5 @@
 # HashMap与HashTable与ConcurrentHashMap的区别
+
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
 <!-- code_chunk_output -->
 
@@ -9,9 +10,10 @@
 
 <!-- /code_chunk_output -->
 ## HashMap源码解析
-请先阅读 [HashMap源码解析](./HashMap.md)
+请先阅读 [HashMap源码解析](https://gknoone.github.io/java-interview/#/常用集合/HashMap源码解析)
 
 ## HashMap与HashTable
+
 - HashTable和HashMap都实现了Map接口，但是HashTable的实现是基于Dictionary抽象类
 - 在HashMap中，null可以作为键，这样的键只有一个；可以有一个或多个键所对应的值为null。当get()方法返回null值时，既可以表示HashMap中没有该键，也可以表示该键所对应的值为null。因此，在HashMap中不能由get()方法来判断HashMap中是否存在某个键，而应该用`containsKey()`方法来判断。而在HashTable中，无论是key还是value都不能为null。
 > 主要的区别有：线程安全性，同步(synchronization)，以及速度。

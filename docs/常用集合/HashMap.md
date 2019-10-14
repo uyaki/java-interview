@@ -1,4 +1,5 @@
 # HashMap
+
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
 <!-- code_chunk_output -->
 
@@ -10,22 +11,9 @@
 * [notice](#notice)
 
 <!-- /code_chunk_output -->
-## 太长不看
+## 思维导图
 
-- 数组+链表实现
-  - put
-    - key做hash=>hashcode
-    - Hashcode 根据数组长度取模登出数组index下标
-    - 位运算比取模高效 => 数组程度为`2^n`，用`2^n-1`做位运算与取模效果一致且更高效
-  - get
-    - 计算index
-    - 如果该位置上是一个链表就需要遍历整个链表，通过 `key.equals(k)` 来找到对应的元素。
-- 容量（默认16）+负载因子（默认0.75）
-  - size > 16*0.75的时候扩容
-- 在 `JDK1.8` 中对 `HashMap` 进行了优化： 当 `hash` 碰撞之后写入链表的长度超过了阈值(默认为8)并且 `table` 的长度不小于64(否则扩容一次)时，链表将会转换为**红黑树**。
-  - 链表 -> 时间复杂度就是  `O(n)`
-  - 红黑树 -> 时间复杂度就是 `O(logn)`
-
+![](assets/HashMap.png)
 ## 简介
 
 ![img](assets/HashMap.jpeg)
@@ -91,3 +79,7 @@ map.forEach((key,value)->{
 大大提高了查询效率。
 
 多线程场景下推荐使用 [ConcurrentHashMap](https://github.com/crossoverJie/Java-Interview/blob/master/MD/ConcurrentHashMap.md)。
+
+## 源码解析
+
+[HashMap源码解析](https://gknoone.github.io/java-interview/#/常用集合/HashMap源码解析)

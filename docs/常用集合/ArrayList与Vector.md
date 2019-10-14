@@ -10,24 +10,9 @@
 
 <!-- /code_chunk_output -->
 
-## 太长不看
+## 思维导图
 
-- ArrayList
-  - 实现于 `List`、`RandomAccess` 接口。可以插入空数据，也支持随机访问；
-  - `elementData`使用了 `transient` 修饰，可以防止被自动序列化；
-  - 自定义序列化和反序列化方法，只序列化被使用的数据；
-  - 数组添加元素
-    - 扩容校验
-    - 插入值
-      - 尾端插入
-      - 指定位置插入（拷贝数组arrayCopy）
-  - 注意
-    - 尽量指定初值
-    - 尽量避免指定位置插值
-- Vector
-  - 实现于 `List` 接口，底层数据结构和 `ArrayList` 类似,也是一个动态数组存放数据。
-  - 在 `add()` 方法的时候使用 `synchronized` 进行同步写数据，但是开销较大，所以 `Vector` 是一个同步容器并不是一个并发容器。
-
+![](assets/ArrayList与Vector.png)
 ## ArrayList
 
 `ArrayList` 实现于 `List`、`RandomAccess` 接口。可以插入空数据，也支持随机访问。

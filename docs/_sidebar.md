@@ -8,8 +8,7 @@
     - [TCP/IP协议](/基础知识/TCPIP/TCP、IP协议.md)
     - [TCP/IP知识点](/基础知识/TCPIP/TCP、IP知识点.md)
     - [TCP首部](/基础知识/TCPIP/TCP首部.md)
-  
-- 常用集合
+- [常用集合](/常用集合/README.md)
   - [ArrayList与Vector](/常用集合/ArrayList与Vector.md)
   - [LinkedList](/常用集合/LinkedList.md)
   - [HashMap](/常用集合/HashMap.md)
@@ -19,11 +18,9 @@
   - [HashSet](/常用集合/HashSet.md)
   - [LinkedHashMap](/常用集合/LinkedHashMap.md)
   - [HashMap与HashTable与ConcurrentHashMap的区别](/常用集合/HashMap与HashTable与ConcurrentHashMap的区别.md)
-  
 - 设计模式
   
   - [代理模式](/设计模式/代理模式.md)
-  
 - 多线程
   - [异步化](/多线程/异步化.md)
   - [并行化](/多线程/并行化.md)
@@ -42,7 +39,6 @@
   - [AQS](/多线程/AQS.md)
   - [阻塞队列](/多线程/阻塞队列.md)
   - [Deamon线程](/多线程/Deamon线程.md)
-  
 - JVM
   - [Java运行时的内存划分](/JVM/Java运行时的内存划分.md)
   - [类加载机制](/JVM/类加载机制.md)
@@ -50,7 +46,6 @@
   - [垃圾回收](/JVM/垃圾回收.md)
   - [对象的创建与内存分配](/JVM/对象的创建与内存分配.md)
   - [volatile关键字](/JVM/volatile关键字.md)
-  
 - 分布式
   - [应用限流](/分布式/应用限流.md)
   - [基于Redis的分布式锁](/分布式/基于Redis的分布式锁.md)
@@ -58,42 +53,65 @@
   - [分布式ID生成器](/分布式/分布式ID生成器.md)
   - [CAP、BASE、ACID](/分布式/CAP、BASE、ACID.md)
   - [分布式事务](/分布式/分布式事务.md)
-  
 - 架构设计
   
   - [缓存设计](/架构设计/缓存设计.md)
-  
+  - [单点登录SSO](/架构设计/单点登录SSO.md)
 - 框架知识
   - [Spring Bean生命周期.](/框架知识/Spring_Bean生命周期.md)
   - [Spring boot AOP](/框架知识/Spring_boot_AOP.md)
-  
 - DB
   
   - [B+ Tree](/DB/B+Tree.md)
   - [Mysql查询优化](/DB/Mysql查询优化.md)
   - [数据库水平垂直拆分](/DB/数据库水平垂直拆分.md)
   - [Seata框架](/DB/Seata框架.md)
-  
 - 算法
 
   - [红包算法](/算法/红包算法.md)
-
-  - [二叉树的层序遍历](/算法/二叉树的层序遍历.md)
-
+- [二叉树的层序遍历](/算法/二叉树的层序遍历.md)
   - [快乐数字](/算法/快乐数字.md)
-
-  - [链表是否有环](/算法/链表是否有环.md)
-
+- [链表是否有环](/算法/链表是否有环.md)
   - [限流算法](/算法/限流算法.md)
-
-  - [从一个数组中返回两个值相加等于目标值的下标](/算法/从一个数组中返回两个值相加等于目标值的下标.md)
-
+- [从一个数组中返回两个值相加等于目标值的下标](/算法/从一个数组中返回两个值相加等于目标值的下标.md)
   - [一致Hash算法](/算法/一致Hash算法.md)
-
-  - [缓存算法LRU、LFU、FIFO.md](/算法/缓存算法LRU、LFU、FIFO.md)
-
+- [缓存算法LRU、LFU、FIFO.md](/算法/缓存算法LRU、LFU、FIFO.md)
   - [](/算法/.md)
-
+- netty
+  - 基础
+    - [Netty的特点](/netty/基础/Netty的特点.md)
+    - [BIO、NIO和AIO的区别](/netty/基础/BIO、NIO和AIO的区别.md)
+    - [NIO的组成是什么](/netty/基础/NIO的组成是什么.md)
+    - [如何使用 Java NIO搭建简单的客户端与服务端实现网络通讯](/netty/基础/如何使用JavaNIO搭建简单的客户端与服务端实现网络通讯.md)
+    - [如何使用 Netty 搭建简单的客户端与服务端实现网络通讯](/netty/基础/如何使用 Netty 搭建简单的客户端与服务端实现网络通讯.md)
+    - [讲讲Netty底层操作与Java NIO操作对应关系](/netty/基础/讲讲Netty底层操作与JavaNIO操作对应关系.md)
+    - [Channel与Socket是什么关系，Channel与EventLoop是什么关系，Channel与 ChannelPipeline是什么关系](/netty/基础/Channel、Socket、EventLoop、ChannelPipeline是什么关系.md)
+    - [EventLoop与EventLoopGroup 是什么关系](/netty/基础/EventLoop与EventLoopGroup是什么关系.md)
+    - [说说Netty中几个重要的对象是什么，它们之间的关系是什么？](/netty/基础/说说Netty中几个重要的对象是什么，它们之间的关系是什么.md)
+    - [Netty 的线程模型是什么](/netty/基础/Netty的线程模型是什么.md)
+  - 粘包与半包和分隔符相关问题
+    - [什么是粘包与半包问题](/netty/粘包与半包和分隔符相关问题/什么是粘包与半包问题.md)
+    - [什么是粘包与半包问题](/netty/粘包与半包和分隔符相关问题/什么是粘包与半包问题.md)
+    - [如何避免粘包与半包问题](/netty/粘包与半包和分隔符相关问题/如何避免粘包与半包问题.md)
+    - [如何使用包定长FixedLengthFrameDecoder解决粘包与半包问题？原理是什么？](/netty/粘包与半包和分隔符相关问题/如何使用包定长FixedLengthFrameDecoder解决粘包与半包问题？原理是什么.md)
+    - [如何使用包分隔符DelimiterBasedFrameDecoder解决粘包与半包问题？原理是什么？](/netty/粘包与半包和分隔符相关问题/如何使用包分隔符 DelimiterBasedFrameDecoder解决粘包与半包问题？原理是什么.md)
+    - [Dubbo 在使用 Netty 作为网络通讯时候是如何避免粘包与半包问题？](/netty/粘包与半包和分隔符相关问题/Dubbo在使用Netty作为网络通讯时候是如何避免粘包与半包问题.md)
+    - [Netty框架本身存在粘包半包问题？](/netty/粘包与半包和分隔符相关问题/Netty框架本身存在粘包半包问题.md)
+    - [什么时候需要考虑粘包与半包问题？](/netty/粘包与半包和分隔符相关问题/什么时候需要考虑粘包与半包问题.md)
+- WebSocket 协议开发相关问题
+    - [如何实现 WebSocket 长连接](/netty/WebSocket 协议开发相关问题/如何实现WebSocket长连接.md)
+    - [WebSocket帧结构的理解](/netty/WebSocket 协议开发相关问题/WebSocket帧结构的理解.md)
+    - [浏览器、服务器对WebSocket的支持情况](/netty/WebSocket 协议开发相关问题/浏览器、服务器对 WebSocket的支持情况.md)
+    - [如何使用 WebSocket 接收和发送广播信息](/netty/WebSocket 协议开发相关问题/如何使用 WebSocket 接收和发送广播信息.md)
+    - [如何使用 WebSocket 接收和发送二进制信息](/netty/WebSocket 协议开发相关问题/如何使用WebSocket接收和发送二进制信息.md)
+  - Netty源码分析相关问题
+    - [服务端如何进行初始化](/netty/Netty源码分析相关问题/服务端如何进行初始化.md)
+    - [何时接受客户端请求](/netty/Netty源码分析相关问题/何时接受客户端请求.md)
+    - [何时注册接受 Socket 并注册到对应的 EventLoop 管理的 Selector ](/netty/Netty源码分析相关问题/何时注册接受Socket并注册到对应的EventLoop管理的Selector.md)
+    - [客户端如何进行初始化](/netty/Netty源码分析相关问题/客户端如何进行初始化.md)
+    - [何时创建的 DefaultChannelPipeline](/netty/Netty源码分析相关问题/何时创建的DefaultChannelPipeline.md)
+    - [讲讲Netty的零拷贝](/netty/Netty源码分析相关问题/讲讲Netty的零拷贝.md)
+  
 - 版本控制
   - [git使用](/版本控制/git使用.md)
 
