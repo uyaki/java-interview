@@ -1,4 +1,5 @@
 # CAP、BASE、ACID
+
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
 <!-- code_chunk_output -->
 
