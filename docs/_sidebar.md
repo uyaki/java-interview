@@ -60,6 +60,7 @@
   - [缓存设计](/架构设计/缓存设计.md)
   - [单点登录SSO](/架构设计/单点登录SSO.md)
   - [消息队列](/架构设计/消息队列.md)
+  - [SpringBoot](/架构设计/SpringBoot.md)
   - [SpringCloud架构](/架构设计/SpringCloud架构.md)
 - 框架知识
   - [Spring Bean生命周期.](/框架知识/Spring_Bean生命周期.md)
