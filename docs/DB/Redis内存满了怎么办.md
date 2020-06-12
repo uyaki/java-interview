@@ -45,7 +45,7 @@ config set maxmemory-policy allkeys-lru
 
 ### 3.1 缓存算法
 
-参考 [缓存算法LRU、LFU、FIFO](https://gknoone.github.io/java-interview/#/算法/缓存算法LRU、LFU、FIFO)
+参考 [缓存算法LRU、LFU、FIFO](https://uyaba.github.io/java-interview/#/算法/缓存算法LRU、LFU、FIFO)
 
 ### 3.2 近似LRU
 

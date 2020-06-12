@@ -10,7 +10,7 @@
 
 <!-- /code_chunk_output -->
 ## HashMap源码解析
-请先阅读 [HashMap源码解析](https://gknoone.github.io/java-interview/#/常用集合/HashMap源码解析)
+请先阅读 [HashMap源码解析](https://uyaba.github.io/java-interview/#/常用集合/HashMap源码解析)
 
 ## HashMap与HashTable
 

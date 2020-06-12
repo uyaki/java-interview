@@ -10,7 +10,7 @@
 
 <!-- /code_chunk_output -->
 
-众所周知 [HashMap](https://gknoone.github.io/java-interview/#/%E5%B8%B8%E7%94%A8%E9%9B%86%E5%90%88/HashMap) 是一个无序的 `Map`，因为每次根据 `key` 的 `hashcode` 映射到 `Entry` 数组上，所以遍历出来的顺序并不是写入的顺序。
+众所周知 [HashMap](https://uyaba.github.io/java-interview/#/%E5%B8%B8%E7%94%A8%E9%9B%86%E5%90%88/HashMap) 是一个无序的 `Map`，因为每次根据 `key` 的 `hashcode` 映射到 `Entry` 数组上，所以遍历出来的顺序并不是写入的顺序。
 
 因此 JDK 推出一个基于 `HashMap` 但具有顺序的 `LinkedHashMap` 来解决有排序需求的场景。
 

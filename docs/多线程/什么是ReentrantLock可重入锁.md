@@ -41,9 +41,9 @@
 ---
 ## 引用
 
-[ReentrantLock实现原理](https://gknoone.github.io/java-interview/#/多线程/ReentrantLock实现原理)
+[ReentrantLock实现原理](https://uyaba.github.io/java-interview/#/多线程/ReentrantLock实现原理)
 
-[AQS](https://gknoone.github.io/java-interview/#/多线程/AQS)
+[AQS](https://uyaba.github.io/java-interview/#/多线程/AQS)
 
 ---
 ## 返回目录

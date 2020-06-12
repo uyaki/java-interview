@@ -82,4 +82,4 @@ map.forEach((key,value)->{
 
 ## 源码解析
 
-[HashMap源码解析](https://gknoone.github.io/java-interview/#/常用集合/HashMap源码解析)
+[HashMap源码解析](https://uyaba.github.io/java-interview/#/常用集合/HashMap源码解析)

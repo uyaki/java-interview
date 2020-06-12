@@ -16,7 +16,7 @@
 
 ## Spring AOP(Java代理模式)
 
-具体可以看[代理模式](https://gknoone.github.io/java-interview/#/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F)
+具体可以看[代理模式](https://uyaba.github.io/java-interview/#/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F)
 
 ## execution 表达式
 
@@ -132,14 +132,14 @@ public class AopAspect {
 把异常代码放到test业务代码里面，如下
 
 ```bash
- com.gknoone.demo.aop.AopAspect           : around before
- com.gknoone.demo.aop.AopAspect           : before
+ com.uyaba.demo.aop.AopAspect           : around before
+ com.uyaba.demo.aop.AopAspect           : before
  java.lang.ArithmeticException: / by zero
  ...
  ...
- com.gknoone.demo.aop.AopAspect           : around after
- com.gknoone.demo.aop.AopAspect           : after
- com.gknoone.demo.aop.AopAspect           : after returning
+ com.uyaba.demo.aop.AopAspect           : around after
+ com.uyaba.demo.aop.AopAspect           : after
+ com.uyaba.demo.aop.AopAspect           : after returning
 ```
 
 
